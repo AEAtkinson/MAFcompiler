@@ -216,7 +216,7 @@ for report in report_list:
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)benign,likely_benign(?:\s|$)')]
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)benign/likely_benign(?:\s|$)')]
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)uncertain_significance,likely_benign(?:\s|$)')]
-    maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)benign,uncertain_significance?:\s|$)')]
+    maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)benign,uncertain_significance(?:\s|$)')]
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)benign,uncertain_significance,likely_benign(?:\s|$)')]
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)uncertain_significance,benign(?:\s|$)')]
     maf1 = maf1[~maf1['CLIN_SIG'].str.contains(r'(?:\s|^)uncertain_significance,benign,likely_benign(?:\s|$)')]
